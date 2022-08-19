@@ -59,7 +59,7 @@ if __name__ == '__main__':
                   'initial_balances': args.initial_balances,
                   'capacities': args.capacities}
 
-    algos = ['TD3']
+    algos = ['PPO', 'TRPO', 'SAC', 'TD3', 'A2C', 'DDPG']
     algo_reward_dict = dict()
     for algo in algos:
         algo_reward_dict[algo] = []
