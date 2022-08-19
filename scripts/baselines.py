@@ -60,25 +60,19 @@ if __name__ == '__main__':
                   'initial_balances': args.initial_balances,
                   'capacities': args.capacities}
 
-    strategies = ['static', 'proportional', 'match_peer']
-    strategy_reward_dict = dict()
-    for strategy in strategies:
-        strategy_reward_dict[strategy] = []
+
+    strategy = args.strategy
+    reward_list = []
 
     for s in range(args.n_seed):
         seed = np.random.randint(low=0, high=1000000)
         data = load_data(env_params['node_index'], env_params['data_path'], env_params['merchants_path'], env_params['local_size'],
                          env_params['manual_balance'], env_params['initial_balances'], env_params['capacities'])
-        for strategy in strategies:
-            env = make_env(data, env_params, seed)
-            discounted_reward = evaluate(strategy, env, env_params, gamma=0.99)
-            strategy_reward_dict[strategy].append(discounted_reward)
+        env = make_env(data, env_params, seed)
+        discounted_reward = evaluate(strategy, env, env_params, gamma=0.99)
+        reward_list.append(discounted_reward)
 
 
     import statistics
-    strategy_mean_reward_dict = dict()
-    for strategy in strategies:
-        strategy_mean_reward_dict[strategy] = statistics.mean(strategy_reward_dict[strategy])
-
-    print('_____________________________________________________')
-    print(strategy_mean_reward_dict)
+    mean = statistics.mean(reward_list)
+    print('mean: ', mean)
