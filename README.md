@@ -24,7 +24,7 @@ Lightning Network Transaction Fee Solver
 ### Prerequisite
 
 
-Please make sure you have installed `python3.6` or higher versions of python.
+Please make sure you have installed `python3.8` or higher versions of python.
 
 
 ### Install
