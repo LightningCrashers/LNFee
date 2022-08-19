@@ -42,7 +42,7 @@ All dependencies will be handled using the command :
 ### Run
 
 ```
-python3 -m scripts.ln_fee --algo PPO
+python3 -m scripts.ln_fee --algo PPO --tb_name PPO_tensorboard
 ```
 
 ### Parameters
