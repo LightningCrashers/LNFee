@@ -27,8 +27,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Baselines')
     parser.add_argument('--algo', choices=['PPO', 'TRPO', 'SAC', 'TD3', 'A2C', 'DDPG'], default='A2C')
     parser.add_argument('--log_dir', default='')
-    parser.add_argument('--data_path', default='../data/data.json')
-    parser.add_argument('--merchants_path', default='../data/merchants.json')
+    parser.add_argument('--data_path', default='data/data.json')
+    parser.add_argument('--merchants_path', default='data/merchants.json')
     parser.add_argument('--fee_base_upper_bound', type=int, default=10000)
     parser.add_argument('--max_episode_length', type=int, default=200)
     parser.add_argument('--n_seed', type=int, default=1)  # 5
