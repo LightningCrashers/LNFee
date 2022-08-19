@@ -31,7 +31,7 @@ Please make sure you have installed `python3.6` or higher versions of python.
 
 
 ```
-git https://github.com/LightningCrashers/DyFEn
+git clone https://github.com/LightningCrashers/DyFEn
 cd DyFEn
 ```
 All dependencies will be handled using the command :
