@@ -4,7 +4,7 @@ Lightning Network Transaction Fee Solver
 
 <div>
 
-[![Made with Python](https://img.shields.io/badge/Python->=3.6-red?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
+[![Made with Python](https://img.shields.io/badge/Python->=3.8-red?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
 [![pandas - up-to-date](https://img.shields.io/static/v1?label=pandas&message=up-to-date&color=blueviolet)](https://pandas.pydata.org/)
 [![Gym - >=0.2](https://img.shields.io/static/v1?label=Gym&message=>%3D0.2&color=black)](https://github.com/openai/gym)
 [![Stable-baselines3 - >= 1.6](https://img.shields.io/static/v1?label=Stable-baselines3&message=>%3D+1.6&color=2ea44f)](https://stable-baselines3.readthedocs.io/en/master/)
