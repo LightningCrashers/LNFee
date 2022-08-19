@@ -26,7 +26,7 @@ def main():
     parser.add_argument('--log_dir', default='plotting/tb_results/trained_model/')
     parser.add_argument('--n_seed', type=int, default=1) # 5
     parser.add_argument('--fee_base_upper_bound', type=int, default=10000)
-    parser.add_argument('--total_timesteps', type=int, default=1000000)
+    parser.add_argument('--total_timesteps', type=int, default=100000)
     parser.add_argument('--max_episode_length', type=int, default=200)
     parser.add_argument('--local_size', type=int, default=100)
     parser.add_argument('--counts', default=[10, 10, 10], type=lambda s: [int(item) for item in s.split(',')])
