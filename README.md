@@ -43,24 +43,34 @@ All dependencies will be handled using the command :
 
 ```
 python3 -m scripts.ln_fee --algo PPO --tb_name PPO_tensorboard
+python3 -m scripts.baselines --strategy static --node_index 71555
 ```
 
 ### Parameters
+ln_fee:
 
 | Parameter              | Default | choices                                      |
 |------------------------|--------|----------------------------------------------|
 | _--algo_               | PPO    | PPO, TRPO, SAC, TD3, A2C, DDPG     |
+| _--node_index_           | 71555 | Arbitrary index in the data            |
 | _--total_timesteps_    | 100000 | Arbitrary Integer                            |
 | _--max_episode_length_ | 200    | Arbitrary Integer less than total_timesteps  |
 | _--counts_             | [10, 10, 10] | List of Integers                             |
 | _--amounts_            | [10000, 50000, 100000] | List of Integers |
 | _--epsilons_           | [.6, .6, .6] | List of floats between 0 and 1               |
 
+
 - You can modify the transaction sampling parameters by changing counts, amounts and epsilons
   - `counts` contains count of each transaction type. 
   - `amounts` contains amount of each transaction type in satoshi.
   - `epsilons` is the ratio of merchants in final sampling.
 - Please note that length of counts, amounts and epsilons lists should be the same.
+baselines:
+
+| Parameter              | Default | choices                                      |
+|------------------------|--------|----------------------------------------------|
+| _--strategy_            | static | static, proportional, match_peer     |
+
 
 
 
