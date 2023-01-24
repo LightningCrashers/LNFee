@@ -13,7 +13,6 @@ Lightning Network Transaction Fee Solver
 [![NetworkX - ~2.8.5](https://img.shields.io/static/v1?label=NetworkX&message=~2.8.5&color=brightgreen)](https://networkx.org/)
 [![tensorboard - ~=2.9.1](https://img.shields.io/static/v1?label=tensorboard&message=~%3D2.9.1&color=orange)](https://www.tensorflow.org/tensorboard/get_started#:~:text=TensorBoard%20is%20a%20tool%20for,dimensional%20space%2C%20and%20much%20more.)
 
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 </div>
 
@@ -89,8 +88,17 @@ If you are facing problems with tensorboard, run the command below in terminal :
 python3 -m tensorboard.main --logdir plotting/tb_results/
 ```
 
+## License
+
+
+This work is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/) license. See LICENSE.CC-BY-NC-ND-4.0.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+
 
 ## Citation
+
+
 
 
 
